@@ -97,6 +97,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    animation: fadeImage 2s; 
 }
 .home-text h1 {
     font-family: "Shrikhand", serif;
@@ -131,4 +132,73 @@ span{
 .btn:hover{
     transform:translateX(4px);
     color: var(--second-color);
+}
+
+    /*About CSS*/ 
+
+.about{
+    margin-left: 800px;
+    width: 50%;
+    margin-top: 275px;
+    padding: 10px;
+}
+.about-text h1{
+    animation: type 1s, fadeIn 3s;
+    color: #e9e9e9;; 
+    font-family: "Martel", serif;
+    font-size: 30px;
+    margin: 10px 5px 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    text-align: center;
+}
+strong{
+    color:#ffa143;
+    font-size: 40px;
+}
+b{
+    color: #40a57d;
+}
+body.about2{
+    background: #ffffff;
+    animation: fadeBackground 1s;
+    animation-fill-mode: forwards;
+}
+.image{
+    position: absolute;
+    top: 150px;
+    left: 180px;
+}
+.image img{
+    width: auto;
+    height: 750px;
+    animation: fadeImage 3s;
+}
+.about-header{
+    background-color: #0d3626;
+    animation: fadeHeader 1s;
+    animation-fill-mode: forwards;
+}
+
+/* JAVASCRIPT */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeBackground {
+    from { background-color: #ffffff; }
+    to { background-color: #113625; }
+}
+@keyframes fadeHeader {
+    from { background-color: #c8ede7;}
+    to { background-color: #05130d;}
+}
+@keyframes fadeImage {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes type {
+    from { width: 0; }
 }
