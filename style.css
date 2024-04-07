@@ -180,6 +180,24 @@ body.about2{
     animation: fadeHeader 1s;
     animation-fill-mode: forwards;
 }
+.arrow{
+    position: absolute;
+    padding: 3rem;
+    box-shadow: 1px -1px 0 1px white inset;
+    -webkit-box-shadow: 2px -2px White inset;
+    border: solid transparent;
+    border-width: 0 0 2rem 2rem;
+    transition: 0.2s;
+    top:50%;
+    margin:-30px 0 0 -67px;
+    margin-left: 1075px;
+    left:35%
+}
+.arrow:hover {
+    box-shadow: 2px -2px 0 2px Orange inset;
+    -webkit-box-shadow: 4px -4px Orange inset;
+}
+.arrow-right { transform:rotate(225deg) }
 
 /* JAVASCRIPT */
 
