@@ -199,6 +199,10 @@ body.about2{
 }
 .arrow-right { transform:rotate(225deg) }
 
+* {
+  box-sizing: border-box;
+}
+
 .contact {
   background-color: #9fe7bd;
   background-size: cover;
@@ -208,24 +212,17 @@ body.about2{
   height: 100vh; /* Set the height to 100% of the viewport height */
 }
 
-.contact-image img {
-  width: 20%;
-  padding-top: -10%;
-  margin-left: 20%;
-}
-
 .contact-column {
-  float: right;
-  width: calc(100% - 230px);
-  padding-right: 10%;
-  padding-top: -10%;
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  text-align: left;
 }
 
-.contact-column label,
-.contact-column input,
-.contact-column textarea {
-  display: block;
-  margin-bottom: 10px;
+.contact-column img {
+  width: calc(75% - 20px); /* Match the width of input elements */
+  margin-bottom: 20px;
+  margin-left: 50%;
 }
 
 .contact h2 {
@@ -233,6 +230,7 @@ body.about2{
   padding-top: 3%;
   color: #1e96ff;
   font-size: 45px;
+  margin-bottom: 2%;
 }
 
 .contact p {
@@ -241,12 +239,8 @@ body.about2{
   font-size: 25px;
 }
 
-.contact-t p {
-  padding-top: 3%;
-}
-
-.contact-m p {
-  padding-bottom: 1%;
+.contact-t, .contact-m {
+  margin-bottom: 20px;
 }
 
 .contact strong {
@@ -257,6 +251,33 @@ body.about2{
   color: #40a57d;
 }
 
+.contact-column {
+  margin-top: 3%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 35%;
+}
+
+input[type=text], textarea {
+  width: calc(70% - 20px); /* Adjusted width */
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 35%;
+  border: 1px solid #ccc;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 35%;
+  border: none;
+  cursor: pointer;
+  width: calc(70% - 20px); /* Adjusted width */
+}
 
 /* JAVASCRIPT */
 
