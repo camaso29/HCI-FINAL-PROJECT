@@ -300,9 +300,9 @@ body.about2{
   text-align: left;
 }
 .contact-column img{
-  width: calc(75% - 20px); 
+  width: calc(90% - 20px); 
   margin-bottom: 20px;
-  margin-left: 50%;
+  margin-left: 35%;
 }
 .contact h2{
   text-align: center;
@@ -331,20 +331,20 @@ body.about2{
 label{
   display: block;
   margin-bottom: 5px;
-  margin-left: 35%;
+  margin-left: 30%;
 }
 input[type=text], textarea{
   width: calc(70% - 20px);
   padding: 10px;
   margin-bottom: 20px;
-  margin-left: 35%;
+  margin-left: 30%;
   border: 1px solid #ccc;
 }
 input[type=submit]{
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
-  margin-left: 35%;
+  margin-left: 30%;
   border: none;
   cursor: pointer;
   width: calc(70% - 20px); 
