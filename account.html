@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GC Exchange Hub</title> 
+    <link rel="stylesheet" type="text/css" heref="css/style.css">
+    <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+</head>
+<body class="account-page">
+    <!--Header Section-->
+    <header class="account-header">
+
+        <a href="#" class="logo">GC <span>Exchange <span>Hub</a>
+        <ul class="navlist">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="shop.html" class="active">Shop</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+            
+    <div class="h-icons">
+        <a href="#"><i class='bx bx-shopping-bag'></i></a>
+        <a href="#"><i class='bx bx-phone' ></i></a>
+        <a href="account.html"><i class='bx bx-user-circle' ></i></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+</header> 
+
+<!--Account Section-->
+<section>
+    <div class="account-container">
+        <div class="account-row">
+            <div class="col-2">
+                <img src="placeholder.png" alt="GC Exchange Hub" width="100%">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="account-btn">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username" class="default">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="account-btn">Register</button>
+                    </form>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+</script>
+
+</body>
+</html>
